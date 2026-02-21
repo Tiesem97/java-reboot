@@ -19,5 +19,24 @@ public class StringUtils {
         return new String(chars);
 
     }
+
+    public static boolean isPalindrome(String input){
+     if(input == null) return false;
+
+     String normalized = input.toLowerCase().replace(" ","");
+     int left = 0;
+     int right = normalized.length() -1;
+
+     while (left<right){
+         if (normalized.charAt(left)!= normalized.charAt(right)){
+             return false;
+         }
+         left ++;
+         right--;
+     }
+     return false;
+
+    }
+
 }
 
