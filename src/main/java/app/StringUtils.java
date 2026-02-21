@@ -34,7 +34,7 @@ public class StringUtils {
          left ++;
          right--;
      }
-     return false;
+     return true;
 
     }
 
